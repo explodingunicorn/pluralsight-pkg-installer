@@ -69,9 +69,6 @@ function orderPackageObj(packageObj) {
 function installPackages(packages) {
   const parsedPackages = parsePackageArray(packages);
   const orderedPackages = orderPackageObj(parsedPackages);
-  // if (orderedPackages.error) {
-  //   throw Error(orderedPackages.error);
-  // }
   return orderedPackages.join(', ');
 }
 
